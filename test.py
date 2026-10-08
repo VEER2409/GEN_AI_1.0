@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage,HumanMessage
 from dotenv import load_dotenv
 load_dotenv(override=True)
 
-llm=ChatGroq(model="openai/gpt-oss-120b")
+llm=ChatGroq(model="openai/gpt-oss-120b",max_tokens=100)
 history=[]
 
 print("My first chatbot")
